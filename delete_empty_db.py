@@ -3,7 +3,7 @@ import asyncio
 from aiomultiprocess import Pool
 
 # Create a global MongoDB client
-client = motor.motor_asyncio.AsyncIOMotorClient('mongodb://twuser:moniThmaRtio@192.168.20.75:27017/admin')
+client = motor.motor_asyncio.AsyncIOMotorClient('')
 
 async def remove_null_column_keys(db_name, batch_size=1000):
     db = client[db_name]  # Get the database by name
